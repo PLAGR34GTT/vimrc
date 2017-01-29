@@ -45,6 +45,10 @@ set smartcase
 " Highlight search results
 set hlsearch
 
+" Un-higlight search results
+" nnoremap <silent> <C-L> :nohl<CR><C-L>
+map <leader>c :nohl<CR>
+
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
@@ -58,10 +62,13 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-try
-  colorscheme molokai
-catch
-endtry
+" Enable 256 colours on capable terminal emulators
+set t_Co=256
+set term=xterm-256color
+
+" Set vim color scheme
+" colorscheme molokai
+ colorscheme distinguished
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -75,15 +82,19 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
 
 " Be smart when using tabs ;)
-set smarttab
+" set smarttab
+
+" On pressing tab, insert 4 spaces
+set expandtab
 
 " 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
+
+"javascript specfic 
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 
 " Linebreak on 500 characters
 set lbr
@@ -96,6 +107,9 @@ set nowrap "Do not wrap lines
 " Toggle paste mode
 set pastetoggle=<leader>p
 
+" StripWhitespace
+map <leader>w :StripWhitespace<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -106,7 +120,7 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>bd :bd<cr>:tabclose<cr>gT
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>

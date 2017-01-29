@@ -2,8 +2,11 @@
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Show hidden files
+let NERDTreeShowHidden=1
+
 " Map NERDTree shortcuts
-map <C-n> :NERDTreeToggle<cr>
+map <C-g> :NERDTreeToggle<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
