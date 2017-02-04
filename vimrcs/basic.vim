@@ -1,6 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Encodeing to utf8
+set encoding=utf8
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -10,6 +13,9 @@ filetype indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
+
+" Make it faster?
+set ttyfast
 
 " Set map leader to ','
 let mapleader = ","
@@ -67,8 +73,10 @@ set t_Co=256
 set term=xterm-256color
 
 " Set vim color scheme
-" colorscheme molokai
- colorscheme distinguished
+colorscheme molokai
+" colorscheme distinguished
+" set background=dark
+" colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
