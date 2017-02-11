@@ -11,6 +11,7 @@ source ~/.vim_runtime/vimrcs/syntastic.vim
 source ~/.vim_runtime/vimrcs/vim-javascript.vim
 source ~/.vim_runtime/vimrcs/editorconfig.vim
 source ~/.vim_runtime/vimrcs/airline.vim
-source ~/.vim_runtime/vimrcs/ctrlp.vim' > ~/.vimrc
+source ~/.vim_runtime/vimrcs/ctrlp.vim
+source ~/.vim_runtime/vimrcs/devicons.vim' > ~/.vimrc
 
 echo "Vim configured successfully."

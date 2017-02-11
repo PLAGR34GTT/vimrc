@@ -3,6 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodeing to utf8
 set encoding=utf8
+set tenc=utf8
 
 " Sets how many lines of history VIM has to remember
 set history=500
@@ -16,6 +17,7 @@ set autoread
 
 " Make it faster?
 set ttyfast
+set lazyredraw
 
 " Set map leader to ','
 let mapleader = ","
@@ -73,8 +75,8 @@ set t_Co=256
 set term=xterm-256color
 
 " Set vim color scheme
-colorscheme molokai
-" colorscheme distinguished
+" colorscheme molokai
+colorscheme distinguished
 " set background=dark
 " colorscheme solarized
 
@@ -168,6 +170,13 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Grep with sliver searcher
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if executable('ag')
+      " Note we extract the column as well as the file and line number
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
