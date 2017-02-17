@@ -2,12 +2,13 @@ cd ~/.vim_runtime/lib
 
 git clone git@github.com:tpope/vim-pathogen.git
 git clone git@github.com:scrooloose/nerdtree.git
-git clone git@github.com:kien/ctrlp.vim.git
+git clone git@github.com:ctrlpvim/ctrlp.vim.git
 git clone git@github.com:mileszs/ack.vim.git
 git clone git@github.com:vim-airline/vim-airline.git
 git clone git@github.com:Valloric/YouCompleteMe.git
 git clone git@github.com:vim-syntastic/syntastic.git
 git clone git@github.com:tiagofumo/vim-nerdtree-syntax-highlight.git
+git clone git@github.com:ryanoasis/vim-devicons.git
 git clone git@github.com:Lokaltog/vim-distinguished.git
 
 git clone git@github.com:mattn/emmet-vim.git
