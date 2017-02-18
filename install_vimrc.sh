@@ -10,11 +10,9 @@ git clone git@github.com:vim-syntastic/syntastic.git
 git clone git@github.com:tiagofumo/vim-nerdtree-syntax-highlight.git
 git clone git@github.com:ryanoasis/vim-devicons.git
 git clone git@github.com:Lokaltog/vim-distinguished.git
-
 git clone git@github.com:mattn/emmet-vim.git
 git clone git@github.com:pangloss/vim-javascript.git
 git clone git@github.com:mxw/vim-jsx.git
-
 git clone git@github.com:jiangmiao/auto-pairs.git
 git clone git@github.com:tpope/vim-surround.git
 git clone git@github.com:ntpeters/vim-better-whitespace.git
@@ -40,5 +38,10 @@ source ~/.vim_runtime/vimrcs/editorconfig.vim
 source ~/.vim_runtime/vimrcs/airline.vim
 source ~/.vim_runtime/vimrcs/ctrlp.vim
 source ~/.vim_runtime/vimrcs/devicons.vim' > ~/.vimrc
+
+cd ~/.vim_runtime/lib/YouCompleteMe
+
+git submodule update --init --recursive
+./install.py --tern-completer
 
 echo "Vim configured successfully."
