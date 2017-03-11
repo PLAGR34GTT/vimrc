@@ -2,8 +2,8 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodeing to utf8
-set encoding=utf8
-set tenc=utf8
+set encoding=utf-8
+set tenc=utf-8
 
 " Sets how many lines of history VIM has to remember
 set history=500
@@ -79,6 +79,9 @@ set term=xterm-256color
 colorscheme distinguished
 " set background=dark
 " colorscheme solarized
+
+" Set background colour to transparent
+hi Normal guibg=NONE ctermbg=NONE
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
