@@ -22,6 +22,7 @@ git clone git@github.com:tpope/vim-fugitive.git
 git clone git@github.com:terryma/vim-multiple-cursors.git
 git clone git@github.com:tpope/vim-commentary.git
 git clone git@github.com:tpope/vim-cucumber.git
+git clone git@github.com:ruanyl/vim-fixmyjs.git
 
 cd ~/.vim_runtime
 

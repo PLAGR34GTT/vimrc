@@ -8,6 +8,34 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
+
+"let g:syntastic_error_symbol = "✗"
+"let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+
+let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+"let g:syntastic_javascript_eslint_exe = 'npm run eslint --'
+
+" execute eslint with --fix flag
+" let g:syntastic_javascript_eslint_args = ['--fix']
+" 
+" " enable autoread to reload any files from files when checktime is called and
+" " the file is changed
+" set autoread
+" 
+" " add an autocmd after vim started to execute checktime for *.js files on write
+" au VimEnter *.js au BufWritePost *.js checktime
+" 
+" "enable to debug: Use :SyntasticInfo and :mes
+" let g:syntastic_debug = 3
+
+let g:fixmyjs_engine = 'eslint'
+let g:fixmyjs_rc_path = '~/.eslintrc'
+" let g:fixmyjs_use_local = 1
+noremap <Leader>f :Fixmyjs<CR>
 "============================================================================
 "File:        cucumber.vim
 "Description: Syntax checking plugin for syntastic.vim

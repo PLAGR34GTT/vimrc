@@ -23,10 +23,11 @@ set lazyredraw
 let mapleader = ","
 let g:mapleader = ","
 
-
+set shell=/bin/zsh
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set signcolumn=yes
 " Always show current position
 set ruler
 
@@ -106,7 +107,7 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 
-"javascript specfic 
+"javascript specfic
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 
 " Linebreak on 500 characters
