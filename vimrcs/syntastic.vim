@@ -11,10 +11,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 "let g:syntastic_error_symbol = "✗"
 "let g:syntastic_warning_symbol = "⚠"
-let g:syntastic_error_symbol = '❌'
-let g:syntastic_style_error_symbol = '⁉️'
-let g:syntastic_warning_symbol = '⚠️'
-let g:syntastic_style_warning_symbol = '💩'
+"let g:syntastic_error_symbol = '❌'
+"let g:syntastic_style_error_symbol = '⁉️'
+"let g:syntastic_warning_symbol = '⚠️'
+"let g:syntastic_style_warning_symbol = '💩'
 
 let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 "let g:syntastic_javascript_eslint_exe = 'npm run eslint --'
@@ -31,9 +31,9 @@ let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 " 
 " "enable to debug: Use :SyntasticInfo and :mes
 " let g:syntastic_debug = 3
+let g:fixmyjs_rc_path = '.eslintrc'
 
 let g:fixmyjs_engine = 'eslint'
-let g:fixmyjs_rc_path = '~/.eslintrc'
 " let g:fixmyjs_use_local = 1
 noremap <Leader>f :Fixmyjs<CR>
 "============================================================================
