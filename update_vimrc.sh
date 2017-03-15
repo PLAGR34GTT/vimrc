@@ -8,6 +8,7 @@ source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/youcompleteme.vim
 source ~/.vim_runtime/vimrcs/nerdtree.vim
 source ~/.vim_runtime/vimrcs/syntastic.vim
+source ~/.vim_runtime/vimrcs/vim-jsx.vim
 source ~/.vim_runtime/vimrcs/vim-javascript.vim
 source ~/.vim_runtime/vimrcs/editorconfig.vim
 source ~/.vim_runtime/vimrcs/airline.vim
