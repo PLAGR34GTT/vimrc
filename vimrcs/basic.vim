@@ -12,6 +12,9 @@ set history=500
 filetype plugin on
 filetype indent on
 
+" Set autoindent
+set autoindent
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -64,6 +67,11 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" netrw stuff (default nerdtree)
+let g:netrw_liststyle=3
+let g:netrw_winsize = 15
+map <C-g> :Lexplore<cr>
+"autocmd VimEnter * :Lexplore
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -76,10 +84,11 @@ set t_Co=256
 set term=xterm-256color
 
 " Set vim color scheme
-" colorscheme molokai
-colorscheme distinguished
+colorscheme molokai
+" colorscheme distinguished
 " set background=dark
 " colorscheme solarized
+" let g:solarized_termcolors=256
 
 " Set background colour to transparent
 hi Normal guibg=NONE ctermbg=NONE
@@ -106,6 +115,9 @@ set expandtab
 " 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
+" c and cpp specific
+autocmd Filetype c setlocal ts=4 sts=4 sw=4
+autocmd Filetype cpp setlocal ts=4 sts=4 sw=4
 
 "javascript specfic
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
