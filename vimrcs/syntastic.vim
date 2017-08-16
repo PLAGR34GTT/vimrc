@@ -10,6 +10,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_checkers = ['gcc']
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cucumber_cucumber_args="--profile syntastic"
 
 let g:syntastic_javascript_checkers = ['eslint']
 

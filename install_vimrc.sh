@@ -6,6 +6,7 @@ git clone git@github.com:tpope/vim-fugitive.git
 git clone git@github.com:tpope/vim-commentary.git
 git clone git@github.com:tpope/vim-cucumber.git
 git clone git@github.com:vim-airline/vim-airline.git
+git clone git@github.com:craigemery/vim-autotag.git
 git clone git@github.com:ctrlpvim/ctrlp.vim.git
 git clone git@github.com:mileszs/ack.vim.git
 git clone git@github.com:Valloric/YouCompleteMe.git

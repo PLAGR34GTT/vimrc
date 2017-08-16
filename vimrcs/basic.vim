@@ -11,7 +11,8 @@ set history=500
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
-
+au BufNewFile,BufRead Jenkinsfile setf groovy
+au BufNewFile,BufRead Jenkinsfile.old setf groovy
 " Set autoindent
 set autoindent
 
