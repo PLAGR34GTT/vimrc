@@ -24,6 +24,7 @@ git clone git@github.com:ntpeters/vim-better-whitespace.git
 git clone git@github.com:plasticboy/vim-markdown.git
 git clone git@github.com:airblade/vim-gitgutter.git
 git clone git@github.com:terryma/vim-multiple-cursors.git
+git clone git@github.com:posva/vim-vue.git
 
 cd ~/.vim_runtime
 
