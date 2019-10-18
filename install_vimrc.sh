@@ -1,3 +1,4 @@
+mkdir ~/.vim_runtime/lib
 cd ~/.vim_runtime/lib
 
 git clone git@github.com:tpope/vim-pathogen.git
