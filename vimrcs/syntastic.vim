@@ -7,6 +7,11 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_cpp_checkers = ['gcc']
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cucumber_cucumber_args="--profile syntastic"
+
 let g:syntastic_javascript_checkers = ['eslint']
 
 "let g:syntastic_error_symbol = "✗"
@@ -21,14 +26,14 @@ let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 " execute eslint with --fix flag
 " let g:syntastic_javascript_eslint_args = ['--fix']
-" 
+"
 " " enable autoread to reload any files from files when checktime is called and
 " " the file is changed
 " set autoread
-" 
+"
 " " add an autocmd after vim started to execute checktime for *.js files on write
 " au VimEnter *.js au BufWritePost *.js checktime
-" 
+"
 " "enable to debug: Use :SyntasticInfo and :mes
 " let g:syntastic_debug = 3
 let g:fixmyjs_rc_path = '.eslintrc'
